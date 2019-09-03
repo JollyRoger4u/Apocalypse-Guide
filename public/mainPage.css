@@ -1,0 +1,120 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+#mainPageBody {
+  font-family: "Abel", sans-serif;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+#mainPageHeader {
+  background-color: black;
+  color: green;
+  text-align: center;
+  border: 10px double darkgreen;
+}
+#mainPageHeader h1 {
+  font-weight: 900;
+  font-size: 3em;
+}
+#mainPageHeader p {
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#mainMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#mainContentWrapper {
+  background: url("images/ewKX10502546.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  width: 200px;
+  padding: 10px;
+  background-color: black;
+  color: green;
+  text-align: center;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.menuItem:hover {
+  color: #1df700;
+  border-color: #1df700;
+}
+.playerBox {
+  position: fixed;
+  right: 10px;
+  top: 130px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 200px;
+  border: 2px solid darkgreen;
+  margin-left: auto;
+  color: green;
+  background: black;
+}
+.playerName {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 800;
+  width: 100%;
+  border-bottom: 2px solid #1df700;
+}
+.menuBox {
+  background: #0000005b;
+  margin: auto;
+  width: 220px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.eventBox {
+  margin: auto;
+  background: black;
+  width: 60%;
+  display: block;
+  color: #dddddd;
+  height: 100%;
+  border: 10px double darkgreen;
+  border-radius: 15px;
+}
+.eventBox h2 {
+  text-align: center;
+  border-bottom: 1px solid darkgreen;
+  padding: 20px;
+}
+.eventBox p {
+  padding: 20px;
+  text-align: center;
+}
+.responseBox {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.eventBox button {
+  display: flex;
+  background: black;
+  color: #1df700;
+  border: 2px solid darkgreen;
+  padding: 5px 15px;
+}
+.eventBox button:hover {
+  border-color: white;
+}

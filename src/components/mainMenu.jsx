@@ -1,0 +1,40 @@
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { GameBoxRouter } from "./gameEvent.jsx";
+
+class MainMenu extends Component {
+  state = {
+    player: "default"
+  };
+  render() {
+    return (
+      <Router>
+        <React.Fragment>
+          <Switch>
+            <Route path="/" exact component={GameMenu} />
+            <Route path="/NewGame" exact component={GameBoxRouter} />
+          </Switch>
+        </React.Fragment>
+      </Router>
+    );
+  }
+}
+class GameMenu extends Component {
+  render() {
+    return (
+      <div className="menuBox">
+        <Link to="/NewGame" style={{ textDecoration: "none", width: 200 }}>
+          <h4 className="menuItem">Start new game</h4>
+        </Link>
+        <Link to="/LoadGame" style={{ textDecoration: "none", width: 200 }}>
+          <h4 className="menuItem">Load game</h4>
+        </Link>
+        <Link to="/About" style={{ textDecoration: "none", width: 200 }}>
+          <h4 className="menuItem">About</h4>
+        </Link>
+      </div>
+    );
+  }
+}
+
+export default MainMenu;
