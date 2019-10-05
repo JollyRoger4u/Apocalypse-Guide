@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 function Event(props) {
   console.log(props);
@@ -12,3 +12,4 @@ function Event(props) {
   );
 }
 export default Event;
+*/

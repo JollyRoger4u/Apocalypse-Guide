@@ -1,12 +1,20 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 
 class Player extends Component {
+  constructor(props) {
+    super(props);
+  }
   state = {
-    playerName: '"Player"',
-    playerPower: 0,
-    playerDes: 1,
-    playerHumInt: 2
+    playerName: "HAL 9000",
+    playerPower: "",
+    playerDes: "",
+    playerHumInt: ""
   };
+  /*statChange(props) {
+    let testyy = props.playerName;
+    return testyy;
+  }
+
   render() {
     return (
       <div className="playerBox">
@@ -14,9 +22,12 @@ class Player extends Component {
         <p className="playerStats">Power: {this.state.playerPower}</p>
         <p className="playerStats">Decisionmaking: {this.state.playerDes}</p>
         <p className="playerStats">Interactivity: {this.state.playerHumInt}</p>
+        
       </div>
     );
   }
 }
 
-export default Player;
+export { Player };
+//<Player statChange={this.state.playerName} />
+*/

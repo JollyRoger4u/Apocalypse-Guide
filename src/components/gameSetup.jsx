@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import ReactDOM from "react-dom";
 const newGameFirstPage = (
   <div>
@@ -21,3 +21,4 @@ class GameSetup extends Component {
 }
 
 export { GameSetup };
+*/

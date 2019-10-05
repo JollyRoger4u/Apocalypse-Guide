@@ -38,19 +38,22 @@ const eventData = [
         rid: 1,
         rbutton: "Military",
         linksTo: 111,
-        hoverText: "power +5, decisionmaking +3"
+        hoverText: "power +5, decisionmaking +3",
+        gameEffect: { power: +5, decision: +3 }
       },
       {
         rid: 2,
         rbutton: "exploration",
         linksTo: 222,
-        hoverText: "power +2, decisionmaking +6"
+        hoverText: "power +2, decisionmaking +6",
+        gameEffect: { power: +2, decision: +6 }
       },
       {
         rid: 3,
         rbutton: "Social media",
         linksTo: 333,
-        hoverText: "power +2, decisionmaking +2, human interaction +4"
+        hoverText: "power +2, decisionmaking +2, interaction +4",
+        gameEffect: { power: +2, decision: +2, interaction: +4 }
       }
     ]
   }

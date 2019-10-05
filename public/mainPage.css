@@ -10,17 +10,17 @@ html {
   flex-flow: column;
 }
 
-#mainPageHeader {
+.mainPageHeader {
   background-color: black;
   color: green;
   text-align: center;
   border: 10px double darkgreen;
 }
-#mainPageHeader h1 {
+.mainPageHeader h1 {
   font-weight: 900;
   font-size: 3em;
 }
-#mainPageHeader p {
+.mainPageHeader p {
   font-style: italic;
   font-size: 15px;
   font-weight: 600;

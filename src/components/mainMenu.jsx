@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import { GameBoxRouter } from "./gameEvent.jsx";
+import { EventDataHandler } from "./gameEvent";
 
-class MainMenu extends Component {
+class MainMenuRouter extends Component {
   state = {
     player: "default"
   };
@@ -11,15 +11,15 @@ class MainMenu extends Component {
       <Router>
         <React.Fragment>
           <Switch>
-            <Route path="/" exact component={GameMenu} />
-            <Route path="/NewGame" exact component={GameBoxRouter} />
+            <Route path="/" exact component={LandingPageMenu} />
+            <Route path="/NewGame" exact component={EventDataHandler} />
           </Switch>
         </React.Fragment>
       </Router>
     );
   }
 }
-class GameMenu extends Component {
+class LandingPageMenu extends Component {
   render() {
     return (
       <div className="menuBox">
@@ -37,4 +37,4 @@ class GameMenu extends Component {
   }
 }
 
-export default MainMenu;
+export default MainMenuRouter;

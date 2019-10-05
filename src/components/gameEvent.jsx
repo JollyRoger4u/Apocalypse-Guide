@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import { eventData } from "../rawdata/events";
 import ReactTooltip from "react-tooltip";
-
+import { Player, statChange } from "./player";
 class EventDataHandler extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       rawEventData: eventData,
@@ -16,7 +14,6 @@ class EventDataHandler extends Component {
   }
 
   render() {
-    console.log(this.state.rawEventData);
     const listEvents = this.state.rawEventData.map(event => (
       <div key={event.id} className="eventBox">
         <h2>{event.id + " " + event.eventTitle}</h2>
@@ -33,37 +30,21 @@ function eventResponse(props) {
     <button
       key={response.rid}
       onClick={() => {
-        clickHandler(response.rid, response.linksTo);
+        clickHandler(response);
       }}
       data-tip={response.hoverText}
     >
-      {console.log(response)}
       <ReactTooltip />
       {response.rid + " - " + response.rbutton}
     </button>
   ));
   return uniqueResp;
 }
-
-function clickHandler(props, props2) {
+function clickHandler(props) {
   //console.log("prestate: " + this.state.nextEvent);
-  console.log("clickhandler: " + props + " " + props2);
+  console.log("clickhandler: " + props.rid + " " + props.hoverText);
+
   //this.setState((this.state.nextEvent = props2));
   //console.log("state: " + this.state.nextEvent);
 }
-
-class GameBoxRouter extends Component {
-  constructor() {
-    super();
-  }
-  render() {
-    return (
-      <Router>
-        <Route path="/" exact component={""} />
-        <Route path="/NewGame" exact component={EventDataHandler} />
-      </Router>
-    );
-  }
-}
-
-export { GameBoxRouter };
+export { EventDataHandler };
