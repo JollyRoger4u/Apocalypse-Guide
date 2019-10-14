@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { eventData } from "../rawdata/events";
 import ReactTooltip from "react-tooltip";
 import { Player, statChange } from "./player";
+
 class EventDataHandler extends Component {
   constructor(props) {
     super(props);

@@ -15,6 +15,7 @@ html {
   color: green;
   text-align: center;
   border: 10px double darkgreen;
+  margin-bottom: 10px;
 }
 .mainPageHeader h1 {
   font-weight: 900;
@@ -59,9 +60,9 @@ html {
 .playerBox {
   position: fixed;
   right: 10px;
-  top: 130px;
+  top: 140px;
   padding: 10px;
-  display: flex;
+  display: flex;  
   justify-content: center;
   flex-direction: column;
   max-width: 200px;
@@ -70,12 +71,23 @@ html {
   color: green;
   background: black;
 }
+.playerHeader{
+  margin-top: -25px;
+  background: black;
+  border: 2px solid darkgreen;
+  text-align: center;
+  border-radius: 20px;
+}
 .playerName {
   text-align: center;
   font-size: 1.8em;
   font-weight: 800;
   width: 100%;
   border-bottom: 2px solid #1df700;
+}
+.playerStats{
+  margin: 0px;
+  text-align: center;
 }
 .menuBox {
   background: #0000005b;

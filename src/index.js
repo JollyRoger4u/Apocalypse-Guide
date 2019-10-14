@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import MainMenuRouter from "./components/mainMenu.jsx";
+import MainMenuRouter from "./components/mainMenu";
+import {Player} from "./components/player"
 //import GameMenu from "./components/mainMenu.jsx";
 //import {GameEventBox} from "./components/gameEvent.jsx";
 class MainPageHeader extends Component {
@@ -20,6 +21,7 @@ class LandingPage extends Component {
       <div>
         <MainPageHeader />
         <MainMenuRouter />
+        <Player />
       </div>
     );
   }
@@ -29,7 +31,7 @@ ReactDOM.render(<LandingPage />, document.getElementById("mainContentWrapper"));
 //ReactDOM.render(mainPageHeader, document.getElementById("mainPageHeader"));
 //ReactDOM.render(<GameEventBox />, document.getElementById("modalBox"));
 //ReactDOM.render(<MainMenu />, document.getElementById("mainMenu"));
-//ReactDOM.render(<Player />, document.getElementById("playerBox"));*/
+//ReactDOM.render(<Player />, document.getElementById("playerBox"));
 
 /*Mainscreen for initial start of the game, keep simple and relatively clean.
 HEADER
