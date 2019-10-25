@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { eventData } from "../rawdata/events";
+/*import React, { Component } from "react";
+import eventData from "./rawData"
 import ReactTooltip from "react-tooltip";
-import { Player, statChange } from "./player";
+import { Player, statChange } from "./Player";
 
 class EventDataHandler extends Component {
   constructor(props) {
@@ -48,4 +48,4 @@ function clickHandler(props) {
   //this.setState((this.state.nextEvent = props2));
   //console.log("state: " + this.state.nextEvent);
 }
-export { EventDataHandler };
+export { EventDataHandler };*/

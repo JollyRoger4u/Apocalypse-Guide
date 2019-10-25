@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import MainMenuRouter from "./components/mainMenu";
-import {Player} from "./components/player"
+import MainMenuRouter from "./components/MainMenu";
+
+//import {Player} from "./components/player"
 //import GameMenu from "./components/mainMenu.jsx";
 //import {GameEventBox} from "./components/gameEvent.jsx";
 class MainPageHeader extends Component {
@@ -21,7 +22,6 @@ class LandingPage extends Component {
       <div>
         <MainPageHeader />
         <MainMenuRouter />
-        <Player />
       </div>
     );
   }

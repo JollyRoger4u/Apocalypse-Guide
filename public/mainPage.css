@@ -68,15 +68,19 @@ html {
   max-width: 200px;
   border: 2px solid darkgreen;
   margin-left: auto;
-  color: green;
+  color: #1df700;
   background: black;
 }
 .playerHeader{
   margin-top: -25px;
   background: black;
+  color: #1df700;
   border: 2px solid darkgreen;
   text-align: center;
   border-radius: 20px;
+  width: 100%;
+  padding: 7px;
+  
 }
 .playerName {
   text-align: center;

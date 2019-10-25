@@ -1,0 +1,19 @@
+                                XXXXXXXXXX
+                                GameHandler
+                                XXXXXXXXXXX
+                               /        I 
+                              /         I
+                        XXXXXXXXXXXX  XXXXXX     
+                        EventHandler  Player
+                        XXXXXXXXXXXX  XXXXXX
+                       /                I
+                      /                 I
+                    XXXXX             XXXXXXX
+                    Event             Player
+                    XXXXX             XXXXXXX
+                      I               
+                      I                  I
+                      I                  I
+                   XXXXXXX           XXXXXXXXX
+                   Results
+                   XXXXXXX    

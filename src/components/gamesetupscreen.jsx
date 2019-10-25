@@ -1,6 +1,8 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import ReactTooltip from "react-tooltip";
-import { Player } from "./player";
+import { Player } from "./Player";
+
+
 
 class GameSetupScreen extends Component{
     
@@ -14,21 +16,24 @@ class GameSetupScreen extends Component{
       )
   }}
 
-  const statChanger = (props) =>{
+  function statChanger(props){
       console.log("preprops " + props.gameEffect)
-    if (props.gameEffect){
+    if (props.gameEffect){      
+        console.log("gah");
         
-        return <Player value="1"/>
+        
     }
   }
-  export{GameSetupScreen};
+  
 
   function eventResponse(props) {
     const uniqueResp = props.map(response => (
       <button
         key={response.rid}
         onClick={() => {
-          statChanger(response);
+          statChanger(response)
+          
+          //statChanger(response);
         }}
         data-tip={response.hoverText}
       >
@@ -41,4 +46,6 @@ class GameSetupScreen extends Component{
   /*let clickHandler = (props) => {
       
     console.log("clickhandler: " + props.rid + " " + props.hoverText);
-  }*/
+  }
+
+  export{GameSetupScreen};*/
