@@ -3,6 +3,8 @@ const userDefaults = {
     playerPower: "NaN",
     playerDes: "NaN",
     playerHumInt: "NaN",
-    status: "OFFLINE"}  
+    status: "OFFLINE",
+    test: "default loaded"
+}
 
-export {userDefaults};
+export { userDefaults };

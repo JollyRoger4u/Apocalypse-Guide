@@ -1,0 +1,1 @@
+console.log(JSON.stringify(this.props.gameState, null, 2));

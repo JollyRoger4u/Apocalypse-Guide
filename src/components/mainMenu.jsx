@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 //import { EventDataHandler } from "./gameEvent";
 //import { GameSetup } from "./GameSetup"
-import {GameHandler} from "./GameHandler"
+import {GameHandler} from "./gameHandler"
 
 class MainMenuRouter extends Component {
   state = {
