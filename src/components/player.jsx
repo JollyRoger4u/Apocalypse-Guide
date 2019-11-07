@@ -8,7 +8,7 @@ class Player extends Component {
 
   render() {
     
-    console.log(this);
+  
     return (
       <div className="playerBox">
         <p className="playerHeader">AI status: {this.props.playerState.status}</p>
@@ -25,5 +25,4 @@ class Player extends Component {
 }
 
 export { Player };
-//<Player statChange={this.state.playerName} />
 

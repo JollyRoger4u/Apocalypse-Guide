@@ -7,7 +7,7 @@ export default class GameHandler extends Component{
         
         state = {
             playerState: userDefaults,
-            currentEvent: "90000",
+            currentEvent: "9000",
             lastEvent: "",            
         }
     updateEventData = (data) =>{
@@ -22,11 +22,10 @@ export default class GameHandler extends Component{
         }else{
             console.log("setState failed in gameHandler. Event sent wrong data")
         }
-        console.log(JSON.stringify(this.state, null, 2));
     }
     render(){
         let currEvent = <React.Fragment>
-            <Event gameState = {this.state} updateEvent={this.updateEventData}/>
+            <Event gameState = {this.state} eventUpdate={this.updateEventData.bind(this)}/>
             <Player playerState = {this.state.playerState}/>
         </React.Fragment>
         return currEvent;

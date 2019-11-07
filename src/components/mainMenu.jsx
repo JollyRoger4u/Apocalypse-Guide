@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-//import { EventDataHandler } from "./gameEvent";
-//import { GameSetup } from "./GameSetup"
 import {GameHandler} from "./gameHandler"
+import {EventOverview} from "./DevTools/eventOverview"
 
 class MainMenuRouter extends Component {
   state = {
@@ -15,6 +14,7 @@ class MainMenuRouter extends Component {
           <Switch>
             <Route path="/" exact component={LandingPageMenu} />
             <Route path="/NewGame" exact component={GameHandler} />
+            <Route path="/eventOverview" exact component={EventOverview} />
           </Switch>
         </React.Fragment>
       </Router>
@@ -33,6 +33,9 @@ class LandingPageMenu extends Component {
         </Link>
         <Link to="/About" style={{ textDecoration: "none", width: 200 }}>
           <h4 className="menuItem">About</h4>
+        </Link>
+        <Link to="/EventOverview" style={{ textDecoration: "none", width: 200 }}>
+          <h4 className="menuItem">EventOverview</h4>
         </Link>
       </div>
     );

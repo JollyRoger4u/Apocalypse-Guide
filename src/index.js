@@ -8,13 +8,17 @@ import MainMenuRouter from "./components/mainMenu";
 //import {GameEventBox} from "./components/gameEvent.jsx";
 class MainPageHeader extends Component {
     render() {
-        return ( <div className = "mainPageHeader" >
-            <h1> Guide to the Apocalypse </h1> 
+        return ( 
+        <div className = "mainPageHeader" >
+            <h1> Guide to the Apocalypse </h1>
             <p> Written by Roger Pettersson </p> 
-            </div>
+        </div>
         );
     }
 }
+
+
+
 class LandingPage extends Component {
     render() {
         return ( 

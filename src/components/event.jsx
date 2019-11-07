@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {eventData} from "../Data/events"
 import ReactTooltip from "react-tooltip";
+
 export default class Event extends Component{
 
     fetchData = () =>{
@@ -23,39 +24,44 @@ export default class Event extends Component{
         };
 
     eventResponse = (data) => {
-        const uniqueResp = data.response.map(response => (
+      let uniqueResp = "";
+      if(data.response !== undefined){
+        uniqueResp = data.response.map(response => (
           <button
             key={response.rid}
             onClick={() => {
               this.clickHandler(response);
+              console.log("I HAVE BEEN CLICKED!!!")
             }}
             data-tip={response.hoverText}
           >
             <ReactTooltip />
             {response.rid + " - " + response.rbutton}
           </button>
+          
         ));
         return uniqueResp;
-        }
-    clickHandler = (btnData) =>{
-      console.log("CLICK");
-      console.log(btnData.rid);
-      console.log(btnData.linksTo)
+        }else{
+          console.log(JSON.stringify(data, null, 2));
+          return <h1>ERROR ERROR ERROR! ALARM!</h1>
+        }}
 
+    clickHandler = (btnData) =>{
+      this.props.eventUpdate(btnData.linksTo);
+      console.log("YES! CLICK REGISTRED")
     }
 
     render(){     
-      console.log("render " + this.props.gameState);
-      console.log(JSON.stringify(this.props.gameState, null, 2));
         let fetchedEvent = this.fetchData();
         let response = this.eventResponse(fetchedEvent);  
-        let event = <div className="eventBox">
+        let event = 
+          <div className="eventBox">
             <h2 className="eventNr">{fetchedEvent.id}</h2>
-        <h2> {fetchedEvent.eventTitle}</h2>
-        <p>{fetchedEvent.eventText}</p>
-        <div className="responseBox">{response}</div>
-        
-        </div>;
+            <h2> {fetchedEvent.eventTitle}</h2>
+            <p>{fetchedEvent.eventText}</p>
+            <div className="responseBox">{response}</div>
+          </div>;
+          
     return (event);
 }};
 

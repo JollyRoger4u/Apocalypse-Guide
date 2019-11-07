@@ -127,6 +127,20 @@ html {
     border-radius: 15px;
 }
 
+.briefEventBox {
+    width: 150px;
+    color: #dddddd;
+    border: 2px solid darkgreen;
+    background: black;
+    border-radius: 15px;
+}
+
+.eventWrapper {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
 .eventBox h2 {
     text-align: center;
     border-bottom: 1px solid darkgreen;
@@ -156,4 +170,32 @@ html {
 
 .eventBox button:hover {
     border-color: #1df700;
+}
+
+.briefTitle {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.briefId {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.briefWrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.briefLinkTo {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.briefEventBox{
+    margin: 5px;
 }
