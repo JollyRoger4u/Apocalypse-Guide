@@ -49,6 +49,7 @@ export default class Event extends Component{
     clickHandler = (btnData) =>{
       this.props.eventUpdate(btnData.linksTo);
       console.log("YES! CLICK REGISTRED")
+      console.log(btnData.rid);
     }
 
     render(){     
